@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 ////////////////////////////////////////////////DATABASE SETUP////////////////////////////////////////////////
-mongoose.connect("mongodb+srv://jakab:jakab2020@cluster0-ul9ti.mongodb.net/wikiDB?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://username:password@cluster0-ul9ti.mongodb.net/wikiDB?retryWrites=true&w=majority", {useNewUrlParser: true});
 
 const articleSchema = {
     title: String,
